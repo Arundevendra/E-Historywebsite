@@ -1,0 +1,312 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.gold{
+    width: 50px;
+    top: 2px;
+    padding: 2px;
+   
+
+}
+.top{
+   margin-right:280px ;
+   padding: 12PX;
+   font-weight: bold;
+   font-size: 16px
+ }
+ .logo{
+   width: 100%;
+   position:absolute;
+   top:0%;
+   left: 0%;
+   padding:1px 1%;
+   display:flex;  
+   font-weight:bold;
+   background:linear-gradient(110deg, darkgoldenrod 30%, gold 70%);
+   color:white;
+   justify-content:space-between;
+   font-size: 18px;
+   }
+
+   ul li 
+   {
+   list-style:none;
+   display:inline-block;
+   padding:2px ;
+   margin: 16px;
+   }
+   ul li a{
+    text-decoration: none;
+    color:black;
+   }
+   ul li a:hover
+   {
+    color:aliceblue;
+    cursor:grabbing;
+    transition: all 0.4s ease;
+   }
+
+   /*       search-bar      */
+   .container{
+    padding: 190px;
+   text-align: center;
+   background-image:  linear-gradient(rgba(47, 56, 105, 0.9),rgba(0,8,51,0.9)), url(vishnu.jpeg);
+   background-size: cover;
+   background-position-x: 170px;
+   background-position: center;
+   position: relative;
+   overflow: hidden;
+
+   }
+.search-bar
+{
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 4px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+    margin-bottom: 225px;
+}
+.search-bar button img{
+    width: 24px;
+}
+
+.search-bar input{
+
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+    
+}
+ ::placeholder
+ {
+    color: #cac7ff;
+ }
+ 
+ .search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+
+ }
+ /* book card UI design*/
+
+
+ section {
+    display: flex;
+    width: 200%;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin-bottom: 100px;
+    margin-top: -200px;
+    margin-left: -110px;
+    
+ }
+
+ 
+ .contain{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .contain .card{
+    position:relative;
+    width: 200px;
+    height: 350px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(15px);
+ }
+ .contain .card .mortal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    
+ }
+
+ .contain .card:hover .mortal{
+    transform: translateY(-100px);
+
+ }
+ .contain .card .mortal img{
+    max-width: 200%;
+    margin: 0 0 -40px;
+    transition: 0.5s ease-in-out;
+ }
+
+ .contain .card:hover .mortal img{
+    transform: translate(-20px, -40px) rotate(-25deg) scale(1.2);
+    margin: 0 0 -115px;
+ }
+ .contain .card .mortal h2
+ {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 85px;
+ }
+ .contain .card:hover .mortal h2
+ {
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 190px;
+ }
+
+ .contain .card .content
+ {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+ }
+
+ .contain .card:hover .content
+ {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50px)
+ }
+
+ .contain .card .content .size
+ {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px 20px;
+ }
+
+ .contain .card .content .size h3
+ {
+   color: #fff;
+   font-weight: 300;
+   font-size: 14px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-right:10px ;
+ }
+ .contain .card .content h4
+ {
+   color: rgb(11, 0, 0);
+   font-weight: bold;
+   font-size: 12px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-right:10px ;
+ }
+ .contain .card .content .size span
+{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: black;
+    background: #fff;
+    border-radius: 2px;
+    font-size: 10px;
+    margin: 0 5px;
+    font-weight: 500;
+    transition: 0.5s ;
+    cursor: pointer;
+}
+
+.contain .card .content .size span:hover
+{
+    background: rgb(186, 161, 22);
+
+}
+
+.contain .card .content  a
+{
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  padding: 12px 30px;
+  background: #fff;
+  border-radius: 40px ;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.contain .card .BHAGAVAD{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    
+ }
+
+ .contain .card:hover .BHAGAVAD{
+    transform: translateY(-100px);
+
+ }
+ .contain .card .BHAGAVAD img{
+    max-width: 50%;
+    margin: 0 0 60px;
+    transition: 0.5s ease-in-out;
+ }
+
+ .contain .card:hover .BHAGAVAD img{
+    transform: translate(-20px, -40px) rotate(-25deg) scale(1.2);
+ }
+ .contain .card .BHAGAVAD h2
+ {
+    font-weight: bold;
+    font-size: 19px;
+    
+ }
+ .contain .card:hover .BHAGAVAD h2
+ {
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+    
+ }
+
+ @media (max-width: 450px) { 
+   .search-bar {
+       width: 72vw; 
+   }
+   }
+   
+  
